@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Institute\\Семестр 7\\Тестирование\\Лабораторная работа 4\\Laboratory Work Four Git\\Testing-Laboratory-Work-Four\\Laboratory-Work-Four\\Laboratory-Work-Four.csproj": {}
+  },
+  "projects": {
+    "D:\\Institute\\Семестр 7\\Тестирование\\Лабораторная работа 4\\Laboratory Work Four Git\\Testing-Laboratory-Work-Four\\Laboratory-Work-Four\\Laboratory-Work-Four.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Institute\\Семестр 7\\Тестирование\\Лабораторная работа 4\\Laboratory Work Four Git\\Testing-Laboratory-Work-Four\\Laboratory-Work-Four\\Laboratory-Work-Four.csproj",
+        "projectName": "Laboratory-Work-Four",
+        "projectPath": "D:\\Institute\\Семестр 7\\Тестирование\\Лабораторная работа 4\\Laboratory Work Four Git\\Testing-Laboratory-Work-Four\\Laboratory-Work-Four\\Laboratory-Work-Four.csproj",
+        "packagesPath": "C:\\Users\\kuraev_daniil\\.nuget\\packages\\",
+        "outputPath": "D:\\Institute\\Семестр 7\\Тестирование\\Лабораторная работа 4\\Laboratory Work Four Git\\Testing-Laboratory-Work-Four\\Laboratory-Work-Four\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kuraev_daniil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
