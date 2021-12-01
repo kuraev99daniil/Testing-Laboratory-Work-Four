@@ -67,7 +67,7 @@ namespace Laboratory_Work_Four
 		}
 		public static bool operator <(Versioning version1, Versioning version2)
 		{
-			return !IsMore(version1, version2);
+			return IsLess(version1, version2);
 		}
 
 		private static bool IsCorrect(string version)
@@ -90,6 +90,29 @@ namespace Laboratory_Work_Four
 				case 1:
 					{
 						return true;
+					}
+				default:
+					{
+						throw new Exception("Неверная работа Comparator");
+					}
+			}
+		}
+
+		private static bool IsLess(Versioning v1, Versioning v2)
+		{
+			switch (v1.CompareTo(v2))
+			{
+				case -1:
+					{
+						return true;
+					}
+				case 0:
+					{
+						return ComparePreRelease(v1.PreRelease, v2.PreRelease) < 0;
+					}
+				case 1:
+					{
+						return false;
 					}
 				default:
 					{

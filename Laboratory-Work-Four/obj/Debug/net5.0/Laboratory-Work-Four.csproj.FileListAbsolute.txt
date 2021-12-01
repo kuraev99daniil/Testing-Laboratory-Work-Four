@@ -188,7 +188,6 @@ D:\Institute\Семестр 7\Тестирование\Лабораторная 
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.csprojAssemblyReference.cache
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.GeneratedMSBuildEditorConfig.editorconfig
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.AssemblyInfoInputs.cache
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.AssemblyInfo.cs

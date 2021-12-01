@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Laboratory_Work_Four
 {
-    class CarriageRange
+    public class CarriageRange
     {
         public Versioning From { get; private set; }
 
@@ -13,7 +13,7 @@ namespace Laboratory_Work_Four
 
         public CarriageRange(string carriageRange, bool isExpanded)
         {
-            CheckRange(carriageRange, isExpanded);            
+            CheckRange(carriageRange, isExpanded);      
         }
 
         private void CheckRange(string carriageRange, bool isExpanded)
@@ -46,6 +46,7 @@ namespace Laboratory_Work_Four
                 fromVersions.Add("0");
             }
 
+
             for (int i = 0; i < fromVersions.Count; i++)
             {
                 if (fromVersions[i] == "x")
@@ -65,16 +66,24 @@ namespace Laboratory_Work_Four
 
             List<int> beforeVersions = new List<int>();
 
+            bool isFindSymbol = false;
             for (int i = 0; i < From.MainVersionParts.Count; i++)
             {
-                if (From.MainVersionParts[i] != 0)
+                if (From.MainVersionParts[i] != 0 && !isFindSymbol)
                 {
                     beforeVersions.Add(From.MainVersionParts[i] + 1);
+
+                    isFindSymbol = true;
 
                     continue;
                 }
 
-                beforeVersions.Add(From.MainVersionParts[i]);
+                beforeVersions.Add(0);
+            }
+
+            if (!isFindSymbol)
+            {
+                beforeVersions[0] = 1;
             }
 
             string beforeVersion = $"{beforeVersions[0]}";
@@ -135,7 +144,7 @@ namespace Laboratory_Work_Four
 
         public bool Contains(CarriageRange range)
         {
-            return range.From >= From && range.From < Before && range.Before >= From && range.Before < Before;
+            return range.From >= From && range.From < Before && range.Before >= From && range.Before <= Before;
         }
     }
 }
