@@ -22,7 +22,7 @@ jobs:
           # Update this line with the directory that contains your tests project file
           name: Run tests
           command: |
-            dotnet test Laboratory-Work-Four/Laboratory-Work-Four.csproj
+            dotnet test Laboratory-Work-Four.sln
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
