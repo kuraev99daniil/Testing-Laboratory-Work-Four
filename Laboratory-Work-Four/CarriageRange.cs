@@ -11,6 +11,12 @@ namespace Laboratory_Work_Four
 
         public Versioning Before { get; private set; }
 
+        private const string ERROR_VERSION_RANGE = "Диапазон версий не корректен!";
+
+        private const string ERROR_EXPANDED_MODEL = "Расширенный модельный ряд не корректен!";
+
+        private const string ERROR_CARRIAGE_RECORDING = "Не выполняется условие записи диапазона каретки!";
+
         public CarriageRange(string carriageRange, bool isExpanded)
         {
             CheckRange(carriageRange, isExpanded);      
@@ -34,7 +40,7 @@ namespace Laboratory_Work_Four
 
             if (!isCorrect)
             {
-                throw new ArgumentException("Диапазон версий не корректен!");
+                throw new ArgumentException(ERROR_VERSION_RANGE);
             }
 
             var fromVersions = versionRange.Replace("^", "").Split(".").ToList();
@@ -67,6 +73,7 @@ namespace Laboratory_Work_Four
             List<int> beforeVersions = new List<int>();
 
             bool isFindSymbol = false;
+
             for (int i = 0; i < From.MainVersionParts.Count; i++)
             {
                 if (From.MainVersionParts[i] != 0 && !isFindSymbol)
@@ -102,7 +109,7 @@ namespace Laboratory_Work_Four
 
             if (!isCorrect)
             {
-                throw new ArgumentException("Расширенный модельный ряд не корректен!");
+                throw new ArgumentException(ERROR_EXPANDED_MODEL);
             }
 
             var versions = extendedModelRange.Replace(">=", "").Replace("<", "").Split(" ");
@@ -120,11 +127,17 @@ namespace Laboratory_Work_Four
                 {
                     var beforeMainVersionParts = Before.MainVersionParts;
 
-                    if (beforeMainVersionParts[i] != fromVersion + 1) throw new ArgumentException("Не выполняется условие записи диапазона каретки!");
+                    if (beforeMainVersionParts[i] != fromVersion + 1)
+                    {
+                        throw new ArgumentException(ERROR_CARRIAGE_RECORDING);
+                    }
 
                     for (int j = i + 1; j < beforeMainVersionParts.Count; j++)
                     {
-                        if (beforeMainVersionParts[j] != 0) throw new ArgumentException("Не выполняется условие записи диапазона каретки!");
+                        if (beforeMainVersionParts[j] != 0)
+                        {
+                            throw new ArgumentException(ERROR_CARRIAGE_RECORDING);
+                        }
                     }
 
                     return;
