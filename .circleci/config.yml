@@ -17,7 +17,6 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - build-tools/install-ci-tools
       - jq/install
       - docker/install-docker-tools
       - browser-tools/install-browser-tools
