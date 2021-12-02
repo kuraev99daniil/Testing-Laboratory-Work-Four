@@ -23,7 +23,7 @@ jobs:
           name: Run tests
           command: |
             dotnet test Laboratory-Work-Four.sln
-            - store_test_results:
+      - store_test_results:
           path: .
 
 
