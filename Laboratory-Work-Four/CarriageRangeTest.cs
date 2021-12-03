@@ -35,10 +35,10 @@ namespace Laboratory_Work_Four
 		{
 			Assert.IsTrue(new CarriageRange(">=3.1.4 <4.0.0", true).Contains(new Versioning("3.9.1")));
 			Assert.IsTrue(new CarriageRange("^1", false).Contains(new Versioning("1.9.1")));
-			Assert.IsTrue(new CarriageRange("^0.5.x", false).Contains(new Versioning("0.5.5")));
+			Assert.IsTrue(new CarriageRange("^0.5.x", false).Contains(new Versioning("0.5.55555")));
 			Assert.IsTrue(new CarriageRange("^0.0.0", false).Contains(new Versioning("0.0.1")));
-			Assert.IsTrue(new CarriageRange("^0.x", false).Contains(new Versioning("0.5.1")));
-			Assert.IsTrue(new CarriageRange(">=1.5.0 <2.0.0", true).Contains(new Versioning("1.5.5")));
+			Assert.IsTrue(new CarriageRange(">=1.5.0 <2.0.0", true).Contains(new Versioning("1.9.9999999")));
+			Assert.IsTrue(new CarriageRange("^0", false).Contains(new Versioning("0.0.9999999")));
 		}
 
 		[Test]

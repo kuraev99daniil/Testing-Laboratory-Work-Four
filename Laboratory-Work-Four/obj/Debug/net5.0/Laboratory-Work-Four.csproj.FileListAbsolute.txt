@@ -197,3 +197,4 @@ D:\Institute\Семестр 7\Тестирование\Лабораторная 
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\ref\Laboratory-Work-Four.dll
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.pdb
 D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.genruntimeconfig.cache
+D:\Institute\Семестр 7\Тестирование\Лабораторная работа 4\Laboratory Work Four Git\Testing-Laboratory-Work-Four\Laboratory-Work-Four\obj\Debug\net5.0\Laboratory-Work-Four.csprojAssemblyReference.cache
